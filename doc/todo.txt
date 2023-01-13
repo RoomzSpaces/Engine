@@ -1,0 +1,119 @@
+-- page mode
+should hide emoji button
+presence header should say Page or World
+--
+
+- locally creating a svox object embeds file:// URL
+
+-- content
+- READMEs
+- images for blog post
+- tweet thread
+- load bugs
+
+---
+
+- can't right or middle click on links in flat
+- should be able to switch between O/W X,Y,Z gestures during same drag
+- emoji popup is showing when typing normally in quill?
+- local gif upload not working
+- precompile ssao effect pass to avoid hitch on load
+- ignore adding ids and draggables to script tags
+- local gif paste not animated
+- V scale up/down is annoying and gets clipped
+- figure out why mozilla svox model gets messed up
+- fog color should match sky
+- vox undo/redo buttons
+- create dialog getting blur when hitting enter during deploy
+- when mic dialog is open, can pinch and zoom UI on iOS
+- commit message says World when it should say Page
+- transparent PNGs have black background
+- should avoid loading the page when there is a git deploy in flight
+- creating a duck without permission on spawner
+- show an icon for a world vs a page in left side
+- agora.io
+- emoji insertion point is wrong in quill if you just change the cursor position
+  - related: quill toolbar not hiding when selection/cursor changes
+- set spawn point should hide menu
+- need to shut down audio worklet job and lip sync job when paused
+- make nav menu items actual A tags
+- index.html add networking config for TURN
+- copy networking config into new hubs
+- add support for some configs in index.html
+- grass popping in late
+- right panel flickers in on mobile
+- PWA
+- clean up per frame allocations
+- video play button missing on ios safari
+- GIF not unpacking when using local filesystem
+- tablets not working
+- show a loading spinner in nav when you click on a link and we're waiting for it to flush
+- if space is held first, then object grabbed, enable snap
+- test iframe embedding
+- lazily allocate svox buffers
+- presence messages are piling up
+- drop non-used environment colors + fix swatches to have colors actually used
+- show guides during XYZ move
+- hide other instances in voxel editor
+- Reset (G) is not going onto undo stack?
+- disable autocorrect on repo field in git dialog
+- avoid adding viseme to outgoing streams that can't decode it
+- go fullscreen on android when tapping in
+- drop external camera system
+- preview color wheel on swatch pages
+- make labels + banners start with a larger scale
+- disable LOD on flat + plains
+- smooth voxel mesher is randomized
+- lock is re-generating smooth mesh, not strictly necessary
+- get rid of a-assets, see how mozilla does it
+- clicking in nav when there are unsaved changes causes dialog to pop up and view to go indigo
+- remove hubs cloud stuff from webpack
+- search for TODO SHARED
+- powered by link
+- bring in avatar audio system
+- skybox in meta tag
+- drop config system (maybe keep some meta tags)
+- drop envs in webpack config
+- sessionId -> clientId
+- refactor all event names to be dash-cased
+- bring over muted ring
+- authorize + sanitize in NAF adapter
+- cut down dead code
+- review all deps
+- consolidate channel classes
+- make voxmoji float
+- allow networking settings to be changed via qs
+- remove all unused translations
+- can't move when pinching on text field on mobile
+- add service to register spaces
+- cull permissions (in atom manager)
+- spawn around origin
+- figure out snap position + scale for screen share
+- need to figure out stack axis. it is stored in the DOM, but also can be in the file.
+  - suggestion: take it out of metadata, and during writeback look it up on the media loaders
+                when spawning, initialize the media loader with what's in the file
+- vox
+  - close out TODOs
+  - add shape, deform, other settings?
+  - publish vox, should burn the axis, snap settings, scale
+  - .svox linked (immutable)
+    - cannot edit name
+    - instantiated with scale, axis settings
+    - can bake into new asset if writeback enabled
+  - editor UX
+    - show origin with ray
+  - smooth voxel materials on left, text editor in middle
+    - color swatches on left, sorted by hue
+    - mouse over each swatch shows the voxels
+    - group numbers, hover over each to see group
+    - modelwriter custom fields
+    - test compression base64
+    - move meshing to worker?
+
+should push terrain chunks to origin on first edit
+need to writeback page change on pdf iff its locked
+video playback stopping when tabbing away
+messing around with cursor, video, and console can cause 3d cursor to disappear (but highlight remain, so show 3d cursor prob false)
+video tick should keep running when tabbed away
+video reset to beginning when anotehr person joins (delay video ownership until joins?)
+test HLS and dash
